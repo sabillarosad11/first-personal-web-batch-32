@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <div class="container-nav">
+            <div class="nav-left">
+                <img src="image/logo.png" alt="">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="project.html" class="nav-project">My Project</a></li>
+                </ul>
+            </div>
+        
+            <div class="nav-right">
+                <a href="form.html">Contact Me</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Akhir Navbar -->
+
+    <!-- Project -->
+    <!-- Form Project -->
+    <div class="container-form">
+        <div class="main-form">
+            <h1>ADD MY PROJECT</h1>
+
+            <form action="" id="form-project">
+                <div class="form-group">
+                    <label for="name">
+                        Project Name
+                    </label>
+                    <input 
+                        type="text" 
+                        class="input-text"
+                        id="name">
+                </div>
+
+                <div class="form-group flex-date">
+                    <div class="start">
+                        <label for="start-date">
+                            Start Date
+                        </label>
+                        <input 
+                            type="date" 
+                            class="date-control"
+                            id="start-date">
+                    </div>
+                    <div class="end">
+                        <label for="end-date">
+                            End Date
+                        </label>
+                        <input 
+                            type="date" 
+                            class="date-control"
+                            id="end-date">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="description">
+                        Description
+                    </label>
+                    <textarea 
+                        name="description"
+                        class="input-text" 
+                        id="description"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <p>Technologies</p>
+                    <div class="flex-check">
+                        <div class="left">
+                            <div class="checkbox" id="input-checkbox">
+                                <input type="checkbox" name="input-check" id="node" class="check" value="1"> 
+                                <label for="node" class="label-check">Node Js</label>
+                            </div>
+                            <div class="checkbox">
+                                <input type="checkbox" name="input-check" id="react" class="check" value="2">
+                                <label for="react" class="label-check">React Js</label>
+                            </div>
+                        </div>
+                        <div class="right" id="input-checkbox">
+                            <div class="checkbox">
+                                <input type="checkbox" name="input-check" id="next" class="check" value="3">
+                                <label for="node" class="label-check">Next Js</label>
+                            </div>
+                            <div class="checkbox">
+                                <input type="checkbox" name="input-check" id="typescript" class="check" value="4">
+                                <label for="typescript" class="label-check">Typescript</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-upload">
+                    <p>Upload Image</p>
+                    <div class="upload-img">
+                        <label for="upload">choose</label>
+                        <i class="fa-solid fa-paperclip"></i>
+                        <input 
+                            type="file" 
+                            class="upload"
+                            id="upload_input" hidden>
+                    </div>
+                    
+                </div>
+
+                <button 
+                    class="btn-project"
+                    type="button"
+                    onclick="addBlog()">Submit
+                </button>
+            </form>
+        </div>
+    </div>
+    <!-- Akhir Form Project -->
+
+    <!-- Content Project -->
+    <div class="container-conpro">
+        <h1>MY PROJECT</h1>
+
+        <div class="container-list-project" id="contents">
+            <div class="list">
+                <div class="image-blog">
+                    <img src="image/imagelist1.jpg" alt="">
+                </div>
+                <h3>
+                    <a href="" target="blank">Fullstuck Developer - 2022</a>
+                </h3>
+                <div class="duration-blog">
+                    durasi : 3 bulan
+                </div>
+                <div class="content-list">
+                    A Full Stack Developer is someone who works with the Back End — or server side — of the application as well as the Front End, or client side.
+                </div>
+                <div class="ic-blog-list">
+                    <i class="fa-brands fa-node-js"></i>
+                    <i class="fa-brands fa-react"></i>
+                    <i id="ic-js" class="fa-brands fa-js-square"></i>
+                    <i class="fa-brands fa-aws"></i>
+                </div>
+                <div class="btn-card-list">
+                    <a href="" class="btn-edit">edit</a>
+                    <a href="" class="btn-delete">delete</a>
+                </div>
+            </div>
+            <div class="list">
+                <div class="image-blog">
+                    <img src="image/imagelist1.jpg" alt="">
+                </div>
+                <h3>
+                    <a href="" target="blank">Fullstuck Developer - 2022</a>
+                </h3>
+                <div class="duration-blog">
+                    durasi : 3 bulan
+                </div>
+                <div class="content-list">
+                    A Full Stack Developer is someone who works with the Back End — or server side — of the application as well as the Front End, or client side.
+                </div>
+                <div class="ic-blog-list">
+                    <i class="fa-brands fa-node-js"></i>
+                    <i class="fa-brands fa-react"></i>
+                    <i class="fa-brands fa-js-square"></i>
+                    <i class="fa-brands fa-aws"></i>
+                </div>
+                <div class="btn-card-list">
+                    <a href="" class="btn-edit">edit</a>
+                    <a href="" class="btn-delete">delete</a>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <script src="blog.js"></script>
+</body>
+</html>
